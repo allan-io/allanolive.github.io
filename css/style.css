@@ -19,14 +19,14 @@ body {
     height: 100%;
     width: 100%; }
 
-#colorlib-wrapper {
+/* #colorlib-wrapper {
   height: 100%;
   width: 100%;
   overflow: hidden; }
   #colorlib-wrapper > div {
     width: 100%;
     height: 100%;
-    overflow-y: hidden; }
+    overflow-y: hidden; } */
 
 a {
   color: #ffdd00;
@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fcfcfc;
   background: #b7c2c2; }
 
-#colorlib-page {
+#main-page {
   position: relative;
   -webkit-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   -moz-transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -81,14 +81,14 @@ h1, h2, h3, h4, h5, h6 {
   -ms-transform: scale(1);
   -o-transform: scale(1);
   transform: scale(1); }
-  .menu-show #colorlib-page {
+  .menu-show #main-page {
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
     transform: scale(1.1);
     position: relative; }
-    .menu-show #colorlib-page:after {
+    .menu-show #main-page:after {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -98,7 +98,7 @@ h1, h2, h3, h4, h5, h6 {
       background: rgba(0, 0, 0, 0.4);
       z-index: 3; }
 
-#colorlib-main-nav {
+#main-nav {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -122,14 +122,14 @@ h1, h2, h3, h4, h5, h6 {
   -o-transform: scale(0);
   transform: scale(0);
   overflow-y: scroll; }
-  #colorlib-main-nav .colorlib-table {
+  #main-nav .colorlib-table {
     display: table;
     width: 100%;
     height: 100%; }
-    #colorlib-main-nav .colorlib-table .colorlib-table-cell {
+    #main-nav .colorlib-table .colorlib-table-cell {
       display: table-cell;
       vertical-align: middle; }
-  #colorlib-main-nav .colorlib-nav-toggle {
+  #main-nav .colorlib-nav-toggle {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -143,24 +143,24 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-transition: 0.3s;
     -o-transition: 0.3s;
     transition: 0.3s; }
-    #colorlib-main-nav .colorlib-nav-toggle i {
+    #main-nav .colorlib-nav-toggle i {
       top: 18px !important;
       left: 0 !important;
       margin: 0 !important;
       padding: 0 !important;
       line-height: 0;
       text-indent: 0; }
-    #colorlib-main-nav .colorlib-nav-toggle.show {
+    #main-nav .colorlib-nav-toggle.show {
       visibility: visible;
       opacity: 1; }
-    #colorlib-main-nav .colorlib-nav-toggle:hover i::before, #colorlib-main-nav .colorlib-nav-toggle:hover i::after {
+    #main-nav .colorlib-nav-toggle:hover i::before, #main-nav .colorlib-nav-toggle:hover i::after {
       content: '';
       width: 40px;
       height: 2px;
       background: #fff;
       position: absolute;
       left: 0; }
-  .menu-show #colorlib-main-nav {
+  .menu-show #main-nav {
     visibility: visible;
     opacity: 1;
     -webkit-transform: scale(1);
@@ -168,28 +168,28 @@ h1, h2, h3, h4, h5, h6 {
     -ms-transform: scale(1);
     -o-transform: scale(1);
     transform: scale(1); }
-  #colorlib-main-nav ul {
+  #main-nav ul {
     padding: 0;
     margin: 0;
     display: block; }
     @media screen and (max-width: 768px) {
-      #colorlib-main-nav ul {
+      #main-nav ul {
         padding: 20px 0 0 0; } }
-    #colorlib-main-nav ul li {
+    #main-nav ul li {
       padding: 0;
       margin: 0;
       list-style: none;
       font-weight: 700; }
-      #colorlib-main-nav ul li a {
+      #main-nav ul li a {
         display: block;
         color: white;
         padding: 5px 0; }
-        #colorlib-main-nav ul li a span {
+        #main-nav ul li a span {
           font-size: 50px;
           color: white;
           position: relative;
           padding: 0 40px; }
-          #colorlib-main-nav ul li a span:before {
+          #main-nav ul li a span:before {
             content: "";
             position: absolute;
             width: 100%;
@@ -209,21 +209,21 @@ h1, h2, h3, h4, h5, h6 {
             -o-transition: all 0.3s ease-in-out 0s;
             transition: all 0.3s ease-in-out 0s; }
           @media screen and (max-width: 768px) {
-            #colorlib-main-nav ul li a span {
+            #main-nav ul li a span {
               font-size: 30px; } }
-        #colorlib-main-nav ul li a:hover, #colorlib-main-nav ul li a:active, #colorlib-main-nav ul li a:focus {
+        #main-nav ul li a:hover, #main-nav ul li a:active, #main-nav ul li a:focus {
           outline: none;
           text-decoration: none; }
-          #colorlib-main-nav ul li a:hover span:before, #colorlib-main-nav ul li a:active span:before, #colorlib-main-nav ul li a:focus span:before {
+          #main-nav ul li a:hover span:before, #main-nav ul li a:active span:before, #main-nav ul li a:focus span:before {
             visibility: visible;
             -webkit-transform: scaleX(1);
             -moz-transform: scaleX(1);
             -ms-transform: scaleX(1);
             -o-transform: scaleX(1);
             transform: scaleX(1); }
-      #colorlib-main-nav ul li.active a span {
+      #main-nav ul li.active a span {
         color: #ffdd00; }
-        #colorlib-main-nav ul li.active a span:before {
+        #main-nav ul li.active a span:before {
           background: #ffdd00;
           visibility: visible;
           -webkit-transform: scaleX(1);
@@ -456,7 +456,7 @@ header {
     display: block;
     margin-bottom: 30px; }
     .services .icon i {
-      font-size: 50px;
+      font-size: 75px;
       line-height: 1.0;
       color: #000; }
   .services .desc h3 {
@@ -1272,7 +1272,7 @@ input[type="text"] {
   font-weight: 500; }
 
 #colorlib-subscribe {
-  padding: 5em 0; }
+  padding-top: 2em; }
   #colorlib-subscribe .colorlib-heading {
     margin-bottom: 20px; }
     #colorlib-subscribe .colorlib-heading h2 {
@@ -1380,10 +1380,10 @@ input[type="text"] {
 
 .allan-img {
   border-radius: 50%;
-  height: 260px;
+  height: 280px;
   display: flex;
   position: relative;
-  top: 10%;
+  top: 15%;
   border: 2px solid white;
   margin: 0 auto;
 }
