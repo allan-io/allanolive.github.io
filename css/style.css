@@ -282,7 +282,7 @@ header {
 #colorlib-blog,
 #colorlib-contact,
 .colorlib-footer {
-  padding: 8em 0;
+  padding: 5em 0;
   clear: both;
   position: relative; }
   @media screen and (max-width: 768px) {
@@ -295,7 +295,7 @@ header {
     #colorlib-blog,
     #colorlib-contact,
     .colorlib-footer {
-      padding: 5em 0; } }
+      padding: 2em 0; } }
 
 #colorlib-hero {
   width: 100%;
@@ -1341,8 +1341,8 @@ input[type="text"] {
     display: block; }
 
 .colorlib-footer {
-  padding-bottom: 5em;
-  background: #002bdc;
+  padding-bottom: 2em;
+  background: rgb(74, 133, 226);
   color: rgba(255, 255, 255, 0.9); }
   .colorlib-footer a {
     color: #fff; }
@@ -1357,7 +1357,7 @@ input[type="text"] {
     display: block; }
     .colorlib-footer .btn-footer a {
       display: inline-block;
-      padding: 20px 30px;
+      padding: 10px 20px;
       background: #ffdd00;
       color: #000;
       font-weight: 500;
